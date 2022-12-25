@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body onscroll="disableScrolling()" 
+onmousewheel="enableScrolling()" 
+ onclick="enableScrolling()"
+>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div id="logo" class="login100-pic js-tilt" data-tilt>
+					<img src="images/food.jpeg" alt="IMG">
+				</div>
+
+				<form id="form" class="login100-form validate-form">
+					<span class="login100-form-title" style="color: #333333;">
+						Member Login
+					</span>
+
+					<div id="not-valid-username" class="not-valid"></div>
+                    <div class="wrap-input100 validate-input">
+						<input id="email" class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+	
+						</span>
+					</div>
+					<div id="not-valid-email" class="not-valid"></div>
+					<div class="wrap-input100 validate-input">
+						<input id="password" class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+
+						</span>
+					</div>
+					<div id="not-valid-password" class="not-valid"></div>
+					
+					<div class="container-login100-form-btn">
+						<button id="sub-button" class="login100-form-btn" type="button" onclick="validateL()">
+							Login
+						</button>
+					</div>
+					<div class="centered">
+					
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="register.html">
+							Register
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+                  
+					</div>
+				</div>
+				</form>
+				<div id="fullyvalid" style="display: none; color:#333333;">
+					<h2>Congratulations! You have succesfully logged into your account!</h2>
+					<img src="images/cn.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js.js"></script>
+</body>
+</html>

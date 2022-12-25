@@ -1,3 +1,39 @@
+.nav_list {
+    margin-right: 1px;
+    list-style: none;
+
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;}
+
+    .nav_link--btn {
+        border: 1.5px solid currentColor;
+        border-radius: 2em;
+        margin-left: 1em;
+        color: white;
+        letter-spacing: 1px;
+        padding: 0.75em 1.5em; 
+      }
+
+      .nav_link--btn:hover {
+        background: var(--text);
+        color: white;
+        border-color: white; 
+      }
+
+      .nav_link--btn::after {
+        display: none; 
+
+      }
+      /*Stili unik per Join*/
+      .nav_link--btn--highlight {
+        background: #F96713;
+        border-color: #F96713 ;
+        color: white; 
+      }
+
+
 :root{
     --main-color:#F96713;
     --black:#13131a;
@@ -12,7 +48,7 @@
     outline: none; border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+
 }
 
 html{
@@ -81,6 +117,7 @@ section{
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
+   
     
 }
 
@@ -93,6 +130,7 @@ section{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
+    margin-right: 10px;
 }
 
 .header .navbar a:hover{
